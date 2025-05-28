@@ -6,6 +6,7 @@
   --spacing: 0.4rem; /* p-3 = 0.12rem padding = 12px padding */
   --font-inter: Inter, Inter Fallback;
   --primary-text-color: #1e1e1e;
+  --void-70: #2C2C2C;
   --void-60: #464646;
   --void-50: #666;
   --void-20: #c3c3c3;

@@ -1,10 +1,14 @@
-import Card, { CardProps } from "@/shared/components/Card/Card";
+import { CardProps } from '@/shared/components/Card/Card';
+import StatCard from './StatCard';
 
 export default function TotalKlimaXLockedCard(props: CardProps) {
-    return (
-      <Card {...props} title="Total KLIMAX Locked">
-        789,000
-      </Card>
-    );
-  }
-  
+  return (
+    <StatCard
+      {...props}
+      buttonText="Buy KlimaX"
+      title="Total KLIMAX Locked"
+      tooltip="KlimaX locks earn risky yield and may be unlocked after 24hrs."
+      tooltipPosition="far"
+    />
+  );
+}

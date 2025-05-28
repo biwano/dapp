@@ -7,6 +7,7 @@
   --font-inter: Inter, Inter Fallback;
   --primary-text-color: #1e1e1e;
   --white: #ffffff;
+  --void-80: #1E1E1E;
   --void-70: #2C2C2C;
   --void-60: #464646;
   --void-50: #666;
@@ -34,6 +35,14 @@ body {
 
 .background-void-10 {
   background: var(--void-10);
+}
+
+.background-void-80 {
+  background: var(--void-80);
+}
+
+.foreground-white {
+  color: var(--white);
 }
 
 h1 {

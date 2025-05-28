@@ -1,12 +1,13 @@
-import Button from "@/shared/components/Button/Button";
-import Card, { CardProps } from "@/shared/components/Card/Card";
+import { CardProps } from '@/shared/components/Card/Card';
+import StatCard from './StatCard';
 
 export default function KlimaPriceCard(props: CardProps) {
-    return (
-      <Card {...props} title="KLIMA Price">
-        789,000
-        <Button className="w-full">Buy Klima</Button>
-      </Card>
-    );
-  }
-  
+  return (
+    <StatCard
+      {...props}
+      buttonText="Buy KLIMA"
+      title="KLIMA Price"
+      tooltip="KLIMA is the governance token for the KlimaDAO. It is used to vote on proposals and make decisions for the protocol."
+    />
+  );
+}

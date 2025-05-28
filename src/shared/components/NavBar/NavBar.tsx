@@ -1,13 +1,13 @@
 import cardStyles from '@/shared/css/card.module.css';
-import klimaProtocolIcon from './images/klimaProtocol.svg';
 import Image from 'next/image';
 import allocateIcon from './images/allocate.svg';
 import burnCarbonIcon from './images/burn-carbon.svg';
 import carbonUniversityIcon from './images/carbon-university.svg';
+import klimaProtocolIcon from './images/klimaProtocol.svg';
 import myHoldingsIcon from './images/my-holdings.svg';
 import protocolOverviewIcon from './images/protocol-overview.svg';
 import sellCarbonIcon from './images/sell-carbon.svg';
-import NavBarItem from './navBarItem';
+import NavBarItem from './NavBarItem';
 
 export default function NavBar() {
   return (

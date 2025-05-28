@@ -19,6 +19,15 @@
   border-bottom-left-radius: 0;
 }
 
+.title {
+  color: var(--void-50);
+  font-family: var(--font-inter);
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.4rem;
+}
+
 .separator {
   border-top: 0.1rem solid #e0e0e0;
   border-color: var(--void-20);

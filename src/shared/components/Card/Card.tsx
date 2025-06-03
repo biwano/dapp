@@ -21,7 +21,7 @@ export default function Card({
   return (
     <div className={clsx(cardStyles.card, className)}>
       <div
-        className={clsx('flex flex-row w-full items-center gap-1', {
+        className={clsx('flex flex-row w-full items-center gap-1 pb-2', {
           'justify-between': tooltipPosition == 'far',
         })}
       >

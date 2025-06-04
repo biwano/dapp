@@ -49,6 +49,10 @@ body {
   background: var(--void-20);
 }
 
+.background-void-50 {
+  background: var(--void-50);
+}
+
 .background-void-80 {
   background: var(--void-80);
 }

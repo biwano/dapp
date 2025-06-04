@@ -1,7 +1,8 @@
 'use client';
 
-import { formatAddress } from '@/shared/utils/web3.utils';
+import logoutIcon from '@/shared/images/logout.svg';
 import { ConnectKitButton, useIsMounted } from 'connectkit';
+import Image from 'next/image';
 import { useAccount, useDisconnect } from 'wagmi';
 import Button from '../Button/Button';
 import Skeleton from '../Skeleton/Skeleton';
@@ -15,9 +16,10 @@ export default function ConnectButton() {
     <div>
       {address ? (
         <>
-          <div>My Wallet Address:</div>
-          <div className="text-void-40">{`${formatAddress(address)}`}</div>
-          <Button onClick={() => disconnect()}>Disconnect</Button>
+          <Button onClick={() => disconnect()} className="w-full">
+            <Image src={logoutIcon} alt={'Logout'} width={16} height={16} />
+            Logout
+          </Button>
         </>
       ) : (
         <>

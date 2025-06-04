@@ -8,12 +8,13 @@
   --primary-text-color: #1e1e1e;
   --white: #ffffff;
   --green: #e6faeb;
+  --green-40: #00cc33;
   --red: rgba(220, 38, 38, 0.2);
   --void-80: #1e1e1e;
   --void-70: #2c2c2c;
   --void-60: #464646;
-  --void-50: #666;
-  --void-40: #777;
+  --void-50: #666666;
+  --void-40: #777777;
   --void-20: #c3c3c3;
   --void-10: #fafafa;
 }
@@ -66,6 +67,22 @@ body {
 
 .text-void-40 {
   color: var(--void-40);
+}
+
+.text-void-20 {
+  color: var(--void-20);
+}
+
+.text-green-40 {
+  color: var(--green-40);
+}
+
+.text-size-14 {
+  font-size: 1.4rem;
+}
+
+.text-size-12 {
+  font-size: 1.2rem;
 }
 
 h1 {

@@ -13,12 +13,13 @@
   --void-70: #2c2c2c;
   --void-60: #464646;
   --void-50: #666;
+  --void-40: #777;
   --void-20: #c3c3c3;
   --void-10: #fafafa;
 }
 
 html {
-  font-size: 10px; /* 0.1rem = 1px */
+  font-size: 62.5%; /* 1rem = 62.5 * 16 / 100 = 10px */
 }
 
 body {
@@ -33,6 +34,10 @@ body {
 
 .border-void-20 {
   border-color: var(--void-20);
+}
+
+.border-foreground {
+  border-color: var(--foreground);
 }
 
 .background-void-10 {
@@ -55,8 +60,12 @@ body {
   background: var(--red);
 }
 
-.foreground-white {
+.text-white {
   color: var(--white);
+}
+
+.text-void-40 {
+  color: var(--void-40);
 }
 
 h1 {

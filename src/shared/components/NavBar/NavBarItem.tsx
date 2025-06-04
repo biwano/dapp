@@ -19,8 +19,9 @@ export default function NavBarItem({ icon, label, href }: NavBarItemProps) {
     <Link
       href={href}
       className={clsx(
-        'flex items-center gap-2 py-2 px-1 hover:opacity-80',
-        isActive && 'font-bold background-void-20 rounded-xl'
+        'flex items-center gap-2 py-2 px-1',
+        isActive && 'font-bold background-void-20 rounded-xl',
+        !isActive && 'hover:opacity-80'
       )}
     >
       <Image src={icon} alt={label} width={20} height={20} />

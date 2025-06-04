@@ -1,5 +1,6 @@
 import cardStyles from '@/shared/css/card.module.css';
 import Image from 'next/image';
+import ConnectButton from './ConnectButton';
 import klimaProtocolIcon from './images/klimaProtocol.svg';
 import { navItems } from './navbar.utils';
 import NavBarItem from './NavBarItem';
@@ -14,10 +15,7 @@ export default function NavBar() {
         priority
       />
       <div className={cardStyles.separator} />
-      <div>
-        <div>My Wallet Address:</div>
-        <div style={{ color: 'red' }}>0x123...456</div>
-      </div>
+      <ConnectButton />
       <div className={cardStyles.separator} />
       <div>
         {navItems.map((item) => (

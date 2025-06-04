@@ -6,7 +6,7 @@ import twitterIcon from './images/twitter.svg';
 
 export default function Footer() {
   return (
-    <div className="flex flex-row background-void-80 foreground-white p-10 justify-between">
+    <div className="flex flex-row background-void-80 text-white p-10 justify-between">
       <div className="flex flex-row gap-10">
         <div>KlimaProtocol.com</div>
         <div>Resources</div>

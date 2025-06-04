@@ -16,7 +16,4 @@ npm run dev
 - `/src/shared/components`: Shared components
 - `/src/shared/css`: Global CSS
 - `/src/shared/images`: Shared images
-
-
-
-
+- `/src/shared/dal`: Data Access Layer

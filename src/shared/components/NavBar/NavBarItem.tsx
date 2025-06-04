@@ -1,14 +1,30 @@
+'use client';
+
+import clsx from 'clsx';
 import Image from 'next/image';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 type NavBarItemProps = {
   icon: string;
   label: string;
+  href: string;
 };
-export default function NavBarItem({ icon, label }: NavBarItemProps) {
+
+export default function NavBarItem({ icon, label, href }: NavBarItemProps) {
+  const pathname = usePathname();
+  const isActive = pathname === href;
+
   return (
-    <div className="flex items-center gap-2 py-2">
+    <Link
+      href={href}
+      className={clsx(
+        'flex items-center gap-2 py-2 px-1 hover:opacity-80',
+        isActive && 'font-bold background-void-20 rounded-xl'
+      )}
+    >
       <Image src={icon} alt={label} width={20} height={20} />
       <div>{label}</div>
-    </div>
+    </Link>
   );
 }

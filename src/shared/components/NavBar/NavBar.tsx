@@ -1,12 +1,7 @@
 import cardStyles from '@/shared/css/card.module.css';
 import Image from 'next/image';
-import allocateIcon from './images/allocate.svg';
-import burnCarbonIcon from './images/burn-carbon.svg';
-import carbonUniversityIcon from './images/carbon-university.svg';
 import klimaProtocolIcon from './images/klimaProtocol.svg';
-import myHoldingsIcon from './images/my-holdings.svg';
-import protocolOverviewIcon from './images/protocol-overview.svg';
-import sellCarbonIcon from './images/sell-carbon.svg';
+import { navItems } from './navbar.utils';
 import NavBarItem from './NavBarItem';
 
 export default function NavBar() {
@@ -25,12 +20,14 @@ export default function NavBar() {
       </div>
       <div className={cardStyles.separator} />
       <div>
-        <NavBarItem icon={protocolOverviewIcon} label="Protocol Overview" />
-        <NavBarItem icon={myHoldingsIcon} label="My Holdings" />
-        <NavBarItem icon={burnCarbonIcon} label="Burn Carbon" />
-        <NavBarItem icon={sellCarbonIcon} label="Sell Carbon" />
-        <NavBarItem icon={allocateIcon} label="Allocate" />
-        <NavBarItem icon={carbonUniversityIcon} label="Carbon University" />
+        {navItems.map((item) => (
+          <NavBarItem
+            key={item.label}
+            icon={item.icon}
+            label={item.label}
+            href={item.href}
+          />
+        ))}
       </div>
     </div>
   );

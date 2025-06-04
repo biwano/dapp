@@ -1,4 +1,5 @@
 import cardStyles from '@/shared/css/card.module.css';
+import { getKlimaBondYieldRates } from '@/shared/dal/klimaBondYieldRates';
 import clsx from 'clsx';
 import CarbonBackingCard from './cards/CarbonBackingCard';
 import CarbonMarketCard from './cards/CarbonMarketCard';
@@ -12,7 +13,9 @@ import LiquidityPoolsCard from './cards/LiquidityPoolsCard';
 import TotalKlimaBondedCard from './cards/TotalKlimaBondedCard';
 import TotalKlimaXLockedCard from './cards/TotalKlimaXLockedCard';
 
-export default function OverviewPage() {
+export default async function OverviewPage() {
+  const data = await getKlimaBondYieldRates();
+
   return (
     <div className="flex flex-col gap-4">
       <div className="flex flex-row ">
@@ -35,7 +38,7 @@ export default function OverviewPage() {
         />
         <KlimaXPriceCard className={clsx('grow-1', cardStyles.leftLinked)} />
       </div>
-      <KlimaBondYieldRatesCard />
+      <KlimaBondYieldRatesCard data={data} />
       <LiquidityPoolsCard />
       <LiquidityPoolRiskyYieldCard />
       <LiquidityPoolRiskyYieldCard />
